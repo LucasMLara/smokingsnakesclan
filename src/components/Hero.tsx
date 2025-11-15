@@ -59,15 +59,15 @@ export const Hero = () => {
       <section
         id="hero"
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center hero-gradient overflow-x-hidden w-full"
+        className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden w-full max-w-[100vw]"
       >
         {/* Animated background elements */}
-        <div className="absolute inset-0 opacity-10 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blood-red rounded-full blur-[120px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blood-red-light rounded-full blur-[120px]" />
+        <div className="absolute inset-0 opacity-10 overflow-hidden w-full">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blood-red rounded-full blur-[120px] max-w-full" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blood-red-light rounded-full blur-[120px] max-w-full" />
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full overflow-hidden">
         {/* Logo placeholder */}
         <div
           ref={logoRef}

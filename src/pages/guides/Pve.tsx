@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Sparkles, Map, BookOpen } from 'lucide-react';
 import gsap from 'gsap';
 import { Navbar } from '@/components/Navbar';
+import { ScrollProgressBar } from '@/components/ScrollProgressBar';
 import { Footer } from '@/components/Footer';
 
 const Pve = () => {
@@ -22,6 +23,7 @@ const Pve = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <ScrollProgressBar />
       <Navbar />
       
       <main className="pt-24 pb-16">
