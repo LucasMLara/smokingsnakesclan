@@ -9,29 +9,25 @@ gsap.registerPlugin(ScrollTrigger);
 const missionsData = [
   {
     id: 1,
-    titleKey: 'Coleta de Ferro',
-    descKey: 'Coletar 5000 unidades de ferro para fortificações',
+    key: 'mission1',
     type: 'resource',
     status: 'active',
   },
   {
     id: 2,
-    titleKey: 'Defesa do Posto Avançado',
-    descKey: 'Proteger o posto norte contra invasores',
+    key: 'mission2',
     type: 'combat',
     status: 'active',
   },
   {
     id: 3,
-    titleKey: 'Exploração da Floresta Sombria',
-    descKey: 'Mapear recursos raros na região oeste',
+    key: 'mission3',
     type: 'exploration',
     status: 'pending',
   },
   {
     id: 4,
-    titleKey: 'Construção da Torre de Vigia',
-    descKey: 'Finalizar torre estratégica no limite sul',
+    key: 'mission4',
     type: 'construction',
     status: 'completed',
   },
@@ -94,12 +90,16 @@ export const Missions = () => {
             className="glass-card glass-hover p-6 rounded-xl"
           >
             <div className="flex justify-between items-start mb-3">
-              <h3 className="text-xl font-cinzel font-bold">{mission.titleKey}</h3>
+              <h3 className="text-xl font-cinzel font-bold">
+                {t(`missions.${mission.key}.title`)}
+              </h3>
               <Badge className={getStatusColor(mission.status)}>
                 {t(`missions.status.${mission.status}`)}
               </Badge>
             </div>
-            <p className="text-muted-foreground mb-3">{mission.descKey}</p>
+            <p className="text-muted-foreground mb-3">
+              {t(`missions.${mission.key}.description`)}
+            </p>
             <Badge variant="outline">{t(`missions.type.${mission.type}`)}</Badge>
           </div>
         ))}

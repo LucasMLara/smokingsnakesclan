@@ -42,6 +42,22 @@
   },
   "missions": {
     "title": "Guild Missions",
+    "mission1": {
+      "title": "Iron Collection",
+      "description": "Collect 5000 units of iron for fortifications"
+    },
+    "mission2": {
+      "title": "Outpost Defense",
+      "description": "Protect the northern outpost against invaders"
+    },
+    "mission3": {
+      "title": "Dark Forest Exploration",
+      "description": "Map rare resources in the western region"
+    },
+    "mission4": {
+      "title": "Watchtower Construction",
+      "description": "Complete strategic tower at the southern border"
+    },
     "type": {
       "resource": "Resource",
       "combat": "Combat",
