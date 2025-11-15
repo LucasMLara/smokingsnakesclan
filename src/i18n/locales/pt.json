@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "title": "Smoking Snakes LATAM",
+    "slogan": "Ordem, Força e Veneno",
+    "discord": "Entrar no Discord"
+  },
+  "about": {
+    "title": "Sobre o Clã",
+    "description": "A Smoking Snakes LATAM é uma guilda formada por jogadores da América Latina. Nosso foco é cooperação, progresso e domínio territorial no universo de Pax Dei."
+  },
+  "game": {
+    "title": "Sobre o Jogo",
+    "description": "Pax Dei é um MMORPG medieval sandbox onde cooperação e estratégia definem o sucesso. No servidor Selene – Keris (Região Aven), a Smoking Snakes LATAM se destaca pela organização e força coletiva, construindo um império unido."
+  },
+  "announcements": {
+    "title": "Comunicado Oficial",
+    "phase1": {
+      "title": "Fase 1 — Preparação do Castelo",
+      "description": "Foco na construção da estrutura central, coleta de recursos e definição de áreas estratégicas."
+    },
+    "phase2": {
+      "title": "Fase 2 — Consolidação das Casas de Profissão",
+      "description": "Estabelecimento das oficinas especializadas e treinamento dos mestres artesãos."
+    },
+    "phase3": {
+      "title": "Fase 3 — Tomada de Território",
+      "description": "Expansão territorial, alianças estratégicas e domínio da região."
+    }
+  },
+  "professions": {
+    "title": "Casas de Profissão",
+    "blacksmith": "Ferreiro",
+    "weaponsmith": "Armeiro",
+    "armorsmith": "Armadureiro",
+    "leatherworker": "Coureiro",
+    "builder": "Carpinteiro",
+    "alchemist": "Alquimista",
+    "farmer": "Fazendeiro/Cozinheiro",
+    "jewelry": "Joalheiro",
+    "recruiter": "Mestre dos Recrutas",
+    "awaiting": "Aguarda candidatos"
+  },
+  "missions": {
+    "title": "Missões da Guilda",
+    "type": {
+      "resource": "Recurso",
+      "combat": "Combate",
+      "exploration": "Exploração",
+      "construction": "Construção"
+    },
+    "status": {
+      "active": "Ativa",
+      "completed": "Concluída",
+      "pending": "Pendente"
+    }
+  },
+  "rankings": {
+    "title": "Rankings",
+    "crafters": "Top Crafters",
+    "combatants": "Top Combatentes",
+    "name": "Nome",
+    "score": "Pontuação"
+  },
+  "footer": {
+    "copyright": "Smoking Snakes LATAM © 2025",
+    "discord": "Discord",
+    "website": "Site Oficial",
+    "directory": "Diretório Pax Dei"
+  }
+}
