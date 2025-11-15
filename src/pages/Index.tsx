@@ -1,4 +1,5 @@
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { GameInfo } from '@/components/GameInfo';
@@ -10,15 +11,26 @@ import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-16">
+      <Navbar />
       <LanguageSwitcher />
       <Hero />
-      <About />
+      <div id="about">
+        <About />
+      </div>
       <GameInfo />
-      <Announcements />
-      <Professions />
-      <Missions />
-      <Rankings />
+      <div id="announcements">
+        <Announcements />
+      </div>
+      <div id="professions">
+        <Professions />
+      </div>
+      <div id="missions">
+        <Missions />
+      </div>
+      <div id="rankings">
+        <Rankings />
+      </div>
       <Footer />
     </main>
   );

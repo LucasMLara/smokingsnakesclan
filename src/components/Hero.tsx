@@ -57,6 +57,7 @@ export const Hero = () => {
   return (
     <>
       <section
+        id="hero"
         ref={heroRef}
         className="relative min-h-screen flex items-center justify-center hero-gradient overflow-x-hidden w-full"
       >
