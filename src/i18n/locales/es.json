@@ -2,7 +2,24 @@
   "hero": {
     "title": "Smoking Snakes LATAM",
     "slogan": "Orden, Fuerza y Veneno",
-    "discord": "Únete a Discord"
+    "discord": "Unirse a Discord"
+  },
+  "discordModal": {
+    "title": "Bienvenido a Smoking Snakes LATAM",
+    "subtitle": "Lee las reglas e información antes de unirte a Discord",
+    "rulesTitle": "Reglas del Gremio",
+    "rules": [
+      "El respeto entre todos los miembros es obligatorio",
+      "La comunicación activa en Discord es esencial",
+      "Colaboración en las misiones del gremio",
+      "Contribuir con recursos siempre que sea posible",
+      "Seguir las estrategias definidas por los líderes",
+      "Prohibido el trolling o sabotaje de miembros"
+    ],
+    "profileTitle": "Sobre el Gremio",
+    "profileDescription": "Smoking Snakes LATAM es un gremio enfocado en cooperación, estrategia y dominio territorial. Trabajamos juntos para construir el imperio más fuerte en Pax Dei, con organización y disciplina militar.",
+    "agreement": "He leído y acepto las reglas",
+    "enterButton": "Unirse a Discord"
   },
   "about": {
     "title": "Sobre el Clan",
@@ -16,47 +33,64 @@
     "title": "Comunicado Oficial",
     "phase1": {
       "title": "Fase 1 — Preparación del Castillo",
-      "description": "Enfoque en la construcción de la estructura central, recolección de recursos y definición de áreas estratégicas."
+      "description": "Enfoque en la construcción de la estructura central, recolección de recursos y definición de áreas estratégicas.",
+      "fullDescription": "En esta fase inicial, nuestro objetivo es establecer los cimientos de nuestro imperio. Todos los miembros deben enfocarse en recolectar recursos básicos como madera, piedra y hierro. La estructura central del castillo necesita ser erigida con máxima prioridad. Cada profesión debe comenzar a organizar sus áreas de trabajo y establecer rutas de recolección eficientes. Esta es una fase crucial que determinará nuestra velocidad de crecimiento en las próximas semanas."
     },
     "phase2": {
       "title": "Fase 2 — Consolidación de las Casas de Profesión",
-      "description": "Establecimiento de talleres especializados y entrenamiento de maestros artesanos."
+      "description": "Establecimiento de talleres especializados y capacitación de maestros artesanos.",
+      "fullDescription": "Con el castillo establecido, ahora nos enfocamos en crear infraestructura especializada. Cada Casa de Profesión debe tener su taller completamente funcional con todas las herramientas necesarias. Los maestros artesanos deben entrenar aprendices y establecer líneas de producción eficientes. El objetivo es lograr autosuficiencia en todas las áreas de artesanía, permitiéndonos producir equipamiento de alta calidad para todo el gremio."
     },
     "phase3": {
       "title": "Fase 3 — Toma de Territorio",
-      "description": "Expansión territorial, alianzas estratégicas y dominio de la región."
+      "description": "Expansión territorial, alianzas estratégicas y dominio de la región.",
+      "fullDescription": "Ha llegado el momento de expandir nuestra influencia. Con nuestras defensas consolidadas y producción establecida, comenzaremos la conquista de territorios estratégicos. Esto incluye puestos avanzados, rutas comerciales y áreas ricas en recursos raros. Buscaremos alianzas con gremios aliados y demostraremos nuestra fuerza contra adversarios. Cada miembro debe estar preparado para defender nuestros intereses y participar en campañas militares organizadas."
     }
   },
   "professions": {
     "title": "Casas de Profesión",
     "blacksmith": "Herrero",
+    "blacksmithDescription": "Especialista en forjar herramientas esenciales. Responsable de producir picos, hachas, palas y otras herramientas básicas que mantienen operativo al gremio.",
     "weaponsmith": "Armero",
-    "armorsmith": "Armero de Armaduras",
+    "weaponsmithDescription": "Maestro en el arte de crear armas mortales. Produce espadas, hachas de guerra, lanzas y otras armas que equipan a nuestros guerreros en batalla.",
+    "armorsmith": "Armador",
+    "armorsmithDescription": "Artesano especializado en protección. Forja armaduras pesadas, escudos y piezas defensivas que mantienen vivos a nuestros combatientes en el campo de batalla.",
     "leatherworker": "Curtidor",
-    "builder": "Carpintero",
+    "leatherworkerDescription": "Trabajador de cuero habilidoso. Crea armaduras ligeras, bolsas, cinturones y equipamiento flexible ideal para exploradores y arqueros.",
+    "builder": "Constructor",
+    "builderDescription": "Constructor esencial para nuestra infraestructura. Responsable de erigir estructuras, fortificaciones y mobiliario que componen nuestro imperio.",
     "alchemist": "Alquimista",
+    "alchemistDescription": "Maestro de elementos y pociones. Produce elixires de curación, pociones de fuerza y otros preparados alquímicos que dan ventaja en combate.",
     "farmer": "Granjero/Cocinero",
+    "farmerDescription": "Guardián del sustento del gremio. Cultiva alimentos, cría animales y prepara comidas que mantienen a todos nutridos y fuertes.",
     "jewelry": "Joyero",
+    "jewelryDescription": "Artista de gemas y metales preciosos. Crea anillos, collares y amuletos con propiedades mágicas que fortalecen a los miembros del gremio.",
     "recruiter": "Maestro de Reclutas",
+    "recruiterDescription": "Responsable de expansión y entrenamiento. Recluta nuevos miembros, organiza entrenamientos y asegura que todos estén preparados para sus funciones.",
     "awaiting": "Esperando candidatos"
   },
   "missions": {
     "title": "Misiones del Gremio",
+    "progressTitle": "Progreso de Objetivos",
     "mission1": {
       "title": "Recolección de Hierro",
-      "description": "Recoger 5000 unidades de hierro para fortificaciones"
+      "description": "Recolectar 5000 unidades de hierro para fortificaciones",
+      "fullDescription": "Esta misión es crítica para fortalecer nuestras defensas. Necesitamos grandes cantidades de hierro para reforzar las murallas del castillo y producir equipamiento para todo el gremio. Todos los mineros deben priorizar la recolección de este recurso. Además del hierro, también necesitamos madera adicional para soportes estructurales."
     },
     "mission2": {
       "title": "Defensa del Puesto Avanzado",
-      "description": "Proteger el puesto norte contra invasores"
+      "description": "Proteger el puesto norte contra invasores",
+      "fullDescription": "Nuestro puesto avanzado del norte está bajo amenaza constante de facciones hostiles. Esta misión requiere eliminar todas las fuerzas enemigas en el área y establecer patrullas regulares. El éxito de esta misión garantizará rutas comerciales seguras y acceso a recursos valiosos en la región norte."
     },
     "mission3": {
       "title": "Exploración del Bosque Oscuro",
-      "description": "Mapear recursos raros en la región oeste"
+      "description": "Mapear recursos raros en la región oeste",
+      "fullDescription": "El Bosque Oscuro es conocido por albergar recursos muy raros y materiales mágicos. Esta misión de exploración busca mapear completamente la región, identificar puntos de interés y catalogar recursos únicos. Se necesitan exploradores experimentados, ya que el área presenta peligros desconocidos. El conocimiento adquirido será invaluable para operaciones futuras."
     },
     "mission4": {
-      "title": "Construcción de la Torre de Vigilancia",
-      "description": "Finalizar torre estratégica en el límite sur"
+      "title": "Construcción de Torre de Vigilancia",
+      "description": "Completar torre estratégica en el límite sur",
+      "fullDescription": "La Torre de Vigilancia sur será nuestro punto de observación estratégico más importante. Nos permitirá monitorear movimientos enemigos, controlar rutas comerciales y servir como puesto de defensa avanzado. La construcción está en fases finales, necesitando solo materiales finales y acabado. Esta estructura será crucial para nuestra seguridad territorial."
     },
     "type": {
       "resource": "Recurso",

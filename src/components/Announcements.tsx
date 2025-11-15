@@ -1,8 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Wrench, Home, Swords } from 'lucide-react';
+import { AnnouncementModal } from '@/components/modals/AnnouncementModal';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +17,7 @@ export const Announcements = () => {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
+  const [selectedPhase, setSelectedPhase] = useState<{ key: string; icon: any } | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -61,7 +63,8 @@ export const Announcements = () => {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="glass-card glass-hover p-6 rounded-xl"
+              className="glass-card glass-hover p-6 rounded-xl cursor-pointer transition-transform hover:scale-105"
+              onClick={() => setSelectedPhase({ key: phase.key, icon: phase.icon })}
             >
               <Icon className={`w-12 h-12 mb-4 ${phase.color}`} />
               <h3 className="text-xl font-cinzel font-bold mb-3">
@@ -74,6 +77,15 @@ export const Announcements = () => {
           );
         })}
       </div>
+
+      {selectedPhase && (
+        <AnnouncementModal
+          open={!!selectedPhase}
+          onOpenChange={() => setSelectedPhase(null)}
+          phaseKey={selectedPhase.key}
+          icon={selectedPhase.icon}
+        />
+      )}
     </section>
   );
 };

@@ -1,11 +1,12 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
+import { DiscordModal } from '@/components/modals/DiscordModal';
 
 export const Hero = () => {
   const { t } = useTranslation();
+  const [discordModalOpen, setDiscordModalOpen] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -54,17 +55,18 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section
-      ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden"
-    >
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blood-red rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blood-red-light rounded-full blur-[120px]" />
-      </div>
+    <>
+      <section
+        ref={heroRef}
+        className="relative min-h-screen flex items-center justify-center hero-gradient overflow-x-hidden w-full"
+      >
+        {/* Animated background elements */}
+        <div className="absolute inset-0 opacity-10 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blood-red rounded-full blur-[120px]" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blood-red-light rounded-full blur-[120px]" />
+        </div>
 
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
         {/* Logo placeholder */}
         <div
           ref={logoRef}
@@ -92,21 +94,17 @@ export const Hero = () => {
         <div ref={buttonRef}>
           <Button
             size="lg"
-            className="text-lg px-8 py-6 glass-card glass-hover"
-            asChild
+            variant="hero"
+            className="text-lg px-8 py-6"
+            onClick={() => setDiscordModalOpen(true)}
           >
-            <a
-              href="https://discord.gg/smokingsnakes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3"
-            >
-              {t('hero.discord')}
-              <ExternalLink className="w-5 h-5" />
-            </a>
+            {t('hero.discord')}
           </Button>
         </div>
       </div>
-    </section>
+      </section>
+
+      <DiscordModal open={discordModalOpen} onOpenChange={setDiscordModalOpen} />
+    </>
   );
 };
