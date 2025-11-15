@@ -25,16 +25,19 @@ export const Professions = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(cardsRef.current, {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
-        },
-      });
+      const cards = cardsRef.current.filter(Boolean);
+      if (cards.length > 0) {
+        gsap.from(cards, {
+          scale: 0.8,
+          opacity: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 70%',
+          },
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();
