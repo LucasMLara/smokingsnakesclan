@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Hero } from '@/components/Hero';
+import { About } from '@/components/About';
+import { GameInfo } from '@/components/GameInfo';
+import { Announcements } from '@/components/Announcements';
+import { Professions } from '@/components/Professions';
+import { Missions } from '@/components/Missions';
+import { Rankings } from '@/components/Rankings';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <LanguageSwitcher />
+      <Hero />
+      <About />
+      <GameInfo />
+      <Announcements />
+      <Professions />
+      <Missions />
+      <Rankings />
+      <Footer />
+    </main>
   );
 };
 
