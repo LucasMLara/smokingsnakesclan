@@ -7,8 +7,8 @@ import { Wrench, Home, Swords } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 const phases = [
-  { key: 'phase1', icon: Wrench, color: 'text-blood-red' },
-  { key: 'phase2', icon: Home, color: 'text-blood-red-light' },
+  { key: 'phase1', icon: Wrench, color: 'text-primary' },
+  { key: 'phase2', icon: Home, color: 'text-primary' },
   { key: 'phase3', icon: Swords, color: 'text-primary' },
 ];
 
@@ -19,16 +19,19 @@ export const Announcements = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(cardsRef.current, {
-        y: 100,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
-        },
-      });
+      const cards = cardsRef.current.filter(Boolean);
+      if (cards.length > 0) {
+        gsap.from(cards, {
+          y: 100,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 70%',
+          },
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();

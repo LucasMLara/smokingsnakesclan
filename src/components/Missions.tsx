@@ -44,16 +44,19 @@ export const Missions = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(cardsRef.current, {
-        y: 80,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
-        },
-      });
+      const cards = cardsRef.current.filter(Boolean);
+      if (cards.length > 0) {
+        gsap.from(cards, {
+          y: 80,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 70%',
+          },
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();
@@ -62,7 +65,7 @@ export const Missions = () => {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active':
-        return 'bg-blood-red text-primary-foreground';
+        return 'bg-primary text-primary-foreground';
       case 'completed':
         return 'bg-green-700 text-primary-foreground';
       case 'pending':
