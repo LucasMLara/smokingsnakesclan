@@ -15,7 +15,9 @@ const Index = () => {
       <ScrollProgressBar />
       <Navbar />
       <Hero />
-      <div id="about">{/* <About /> */}</div>
+      <div id="about">
+        <About />
+      </div>
       <GameInfo />
       <div id="announcements">
         <Announcements />
