@@ -29,17 +29,25 @@ export const Rankings = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(tablesRef.current, {
-        y: 60,
-        opacity: 0,
-        filter: 'blur(10px)',
-        duration: 0.8,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 70%',
-        },
-      });
+      const tables = tablesRef.current.filter(Boolean);
+      if (tables.length > 0) {
+        // Set initial visible state
+        gsap.set(tables, { opacity: 1, y: 0 });
+        
+        // Animate from hidden
+        gsap.from(tables, {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();
