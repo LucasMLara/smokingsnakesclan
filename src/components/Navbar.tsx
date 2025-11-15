@@ -159,7 +159,7 @@ export const Navbar = () => {
 
             {/* Guides Dropdown */}
             <div 
-              className="relative"
+              className="relative group"
               onMouseEnter={() => setIsGuidesOpen(true)}
               onMouseLeave={() => setIsGuidesOpen(false)}
             >
@@ -172,18 +172,21 @@ export const Navbar = () => {
               {isGuidesOpen && (
                 <div 
                   ref={guidesDropdownRef}
-                  className="absolute top-full left-0 mt-1 w-64 bg-deep-black/98 backdrop-blur-xl border border-glass-border rounded-lg shadow-elegant overflow-hidden z-50"
+                  className="absolute top-full left-0 pt-2 w-64 z-50"
                 >
-                  {guideItems.map((guide) => (
-                    <Link
-                      key={guide.path}
-                      to={guide.path}
-                      className="guide-item flex items-center gap-3 px-4 py-3 text-sm text-soft-white/80 hover:text-blood-red hover:bg-secondary/50 transition-all duration-300 border-b border-glass-border last:border-b-0"
-                    >
-                      <span className="text-xl">{guide.icon}</span>
-                      {guide.name}
-                    </Link>
-                  ))}
+                  <div className="bg-deep-black/98 backdrop-blur-xl border border-glass-border rounded-lg shadow-elegant overflow-hidden">
+                    {guideItems.map((guide) => (
+                      <Link
+                        key={guide.path}
+                        to={guide.path}
+                        onClick={() => setIsGuidesOpen(false)}
+                        className="guide-item flex items-center gap-3 px-4 py-3 text-sm text-soft-white/80 hover:text-blood-red hover:bg-secondary/50 transition-all duration-300 border-b border-glass-border last:border-b-0"
+                      >
+                        <span className="text-xl">{guide.icon}</span>
+                        {guide.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
