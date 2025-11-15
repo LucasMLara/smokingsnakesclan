@@ -42,14 +42,20 @@ export const Missions = () => {
     const ctx = gsap.context(() => {
       const cards = cardsRef.current.filter(Boolean);
       if (cards.length > 0) {
+        // Set initial state
+        gsap.set(cards, { opacity: 1, y: 0 });
+        
+        // Then animate from hidden state
         gsap.from(cards, {
           y: 80,
           opacity: 0,
           duration: 0.8,
           stagger: 0.15,
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: 'top 70%',
+            start: 'top 80%',
+            toggleActions: 'play none none none',
           },
         });
       }
