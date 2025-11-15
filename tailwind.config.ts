@@ -66,6 +66,9 @@ export default {
         card: "0 8px 32px hsl(0 0% 0% / 0.4)",
         elegant: "0 10px 30px -10px hsl(0 100% 27% / 0.3)",
       },
+      transitionDuration: {
+        '400': '400ms',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
