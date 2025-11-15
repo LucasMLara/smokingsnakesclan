@@ -1,5 +1,5 @@
-import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 import { Navbar } from '@/components/Navbar';
+import { ScrollProgressBar } from '@/components/ScrollProgressBar';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { GameInfo } from '@/components/GameInfo';
@@ -11,9 +11,9 @@ import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <main className="min-h-screen pt-16">
+    <main className="min-h-screen pt-16 overflow-x-hidden w-full max-w-[100vw]">
+      <ScrollProgressBar />
       <Navbar />
-      <LanguageSwitcher />
       <Hero />
       <div id="about">
         <About />

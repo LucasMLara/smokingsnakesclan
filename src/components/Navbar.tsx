@@ -3,13 +3,24 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Home, Users, Megaphone, Briefcase, Target, Trophy, BookOpen, ChevronDown } from 'lucide-react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const languages = [
+  { code: 'pt', flag: '🇧🇷', name: 'Português' },
+  { code: 'en', flag: '🇺🇸', name: 'English' },
+  { code: 'es', flag: '🇪🇸', name: 'Español' },
+];
 
 export const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [isGuidesOpen, setIsGuidesOpen] = useState(false);
   const location = useLocation();
+  const navbarRef = useRef<HTMLElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const guidesDropdownRef = useRef<HTMLDivElement>(null);
 
@@ -27,6 +38,52 @@ export const Navbar = () => {
     { name: t('navbar.guides.pvpSmall'), path: '/guides/pvp-small', icon: '⚔️' },
     { name: t('navbar.guides.pve'), path: '/guides/pve', icon: '🧙' },
   ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem('smoking-snakes-language', lng);
+  };
+
+  // Auto-hide navbar on scroll
+  useEffect(() => {
+    if (!navbarRef.current) return;
+
+    let lastScrollY = window.scrollY;
+
+    ScrollTrigger.create({
+      start: 'top top',
+      end: 99999,
+      onUpdate: () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > 100) {
+          if (currentScrollY > lastScrollY) {
+            // Scrolling down
+            gsap.to(navbarRef.current, {
+              y: -100,
+              opacity: 0.8,
+              duration: 0.4,
+              ease: 'power2.out'
+            });
+          } else {
+            // Scrolling up
+            gsap.to(navbarRef.current, {
+              y: 0,
+              opacity: 1,
+              duration: 0.4,
+              ease: 'power2.out'
+            });
+          }
+        }
+        
+        lastScrollY = currentScrollY;
+      }
+    });
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
 
   useEffect(() => {
     if (isOpen && mobileMenuRef.current) {
@@ -76,7 +133,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-deep-black/95 backdrop-blur-lg border-b border-glass-border">
+    <nav ref={navbarRef} className="fixed top-1 left-0 right-0 z-50 bg-deep-black/95 backdrop-blur-lg border-b border-glass-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -130,6 +187,27 @@ export const Navbar = () => {
                 </div>
               )}
             </div>
+
+            {/* Language Switcher Desktop */}
+            <div className="flex items-center gap-1 ml-2 pl-2 border-l border-glass-border">
+              {languages.map((lang) => (
+                <Button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  variant={i18n.language === lang.code ? 'default' : 'ghost'}
+                  size="sm"
+                  className={cn(
+                    "h-8 w-10 p-0 transition-all duration-300",
+                    i18n.language === lang.code 
+                      ? "bg-blood-red/20 hover:bg-blood-red/30" 
+                      : "hover:bg-secondary/50"
+                  )}
+                  title={lang.name}
+                >
+                  <span className="text-lg">{lang.flag}</span>
+                </Button>
+              ))}
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -177,6 +255,32 @@ export const Navbar = () => {
                   {guide.name}
                 </Link>
               ))}
+            </div>
+
+            {/* Language Switcher Mobile */}
+            <div className="pt-4 border-t border-glass-border">
+              <div className="px-4 py-2 text-xs font-cinzel font-bold text-blood-red uppercase tracking-wider">
+                Idioma
+              </div>
+              <div className="flex gap-2 px-4">
+                {languages.map((lang) => (
+                  <Button
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    variant={i18n.language === lang.code ? 'default' : 'secondary'}
+                    size="sm"
+                    className={cn(
+                      "flex-1 transition-all duration-300",
+                      i18n.language === lang.code 
+                        ? "bg-blood-red/20 hover:bg-blood-red/30" 
+                        : "hover:bg-secondary/50"
+                    )}
+                    title={lang.name}
+                  >
+                    <span className="text-xl">{lang.flag}</span>
+                  </Button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
