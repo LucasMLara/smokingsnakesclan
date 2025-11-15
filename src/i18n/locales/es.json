@@ -42,6 +42,22 @@
   },
   "missions": {
     "title": "Misiones del Gremio",
+    "mission1": {
+      "title": "Recolección de Hierro",
+      "description": "Recoger 5000 unidades de hierro para fortificaciones"
+    },
+    "mission2": {
+      "title": "Defensa del Puesto Avanzado",
+      "description": "Proteger el puesto norte contra invasores"
+    },
+    "mission3": {
+      "title": "Exploración del Bosque Oscuro",
+      "description": "Mapear recursos raros en la región oeste"
+    },
+    "mission4": {
+      "title": "Construcción de la Torre de Vigilancia",
+      "description": "Finalizar torre estratégica en el límite sur"
+    },
     "type": {
       "resource": "Recurso",
       "combat": "Combate",

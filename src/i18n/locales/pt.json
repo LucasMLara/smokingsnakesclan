@@ -42,6 +42,22 @@
   },
   "missions": {
     "title": "Missões da Guilda",
+    "mission1": {
+      "title": "Coleta de Ferro",
+      "description": "Coletar 5000 unidades de ferro para fortificações"
+    },
+    "mission2": {
+      "title": "Defesa do Posto Avançado",
+      "description": "Proteger o posto norte contra invasores"
+    },
+    "mission3": {
+      "title": "Exploração da Floresta Sombria",
+      "description": "Mapear recursos raros na região oeste"
+    },
+    "mission4": {
+      "title": "Construção da Torre de Vigia",
+      "description": "Finalizar torre estratégica no limite sul"
+    },
     "type": {
       "resource": "Recurso",
       "combat": "Combate",
