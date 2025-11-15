@@ -1,8 +1,54 @@
 {
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre el Clan",
+    "announcements": "Comunicado Oficial",
+    "professions": "Casas de Profesión",
+    "missions": "Misiones",
+    "rankings": "Rankings",
+    "guides": {
+      "title": "Guías",
+      "pvpZvz": "Build PvP ZVZ (Gran Escala)",
+      "pvpSmall": "Build PvP (Escala Pequeña)",
+      "pve": "Build PvE"
+    }
+  },
   "hero": {
     "title": "Smoking Snakes LATAM",
     "slogan": "Orden, Fuerza y Veneno",
     "discord": "Unirse a Discord"
+  },
+  "guides": {
+    "pvpZvz": {
+      "title": "BUILD PVP ZVZ",
+      "subtitle": "Gran Escala - Combate Masivo",
+      "contextTitle": "Contexto de Uso",
+      "context": "Esta build está optimizada para combates a gran escala (Zerg vs Zerg), donde decenas o cientos de jugadores se enfrentan simultáneamente. El enfoque está en supervivencia, control de área y daño sostenido en grupo.",
+      "strategyTitle": "Estrategia Principal",
+      "strategy": "Mantente en formación con tu grupo, prioriza objetivos llamados por los shotcallers y usa tus habilidades de control de área en el momento correcto. La coordinación es clave para ganar batallas ZVZ.",
+      "accessGuide": "Acceder a la Guía Completa",
+      "guideNote": "El enlace será configurado pronto por el administrador"
+    },
+    "pvpSmall": {
+      "title": "BUILD PVP ESCALA PEQUEÑA",
+      "subtitle": "Escala Pequeña - Combate Táctico",
+      "contextTitle": "Contexto de Uso",
+      "context": "Diseñada para combates con 5-15 jugadores, donde la movilidad, el daño explosivo y las decisiones individuales marcan la diferencia. Ideal para ganks, defensa de recursos y escaramuzas rápidas.",
+      "strategyTitle": "Estrategia Principal",
+      "strategy": "Maximiza tu potencial de daño en ventanas cortas, usa el terreno a tu favor y está siempre listo para perseguir o retirarte. La comunicación rápida con tu grupo pequeño es esencial.",
+      "accessGuide": "Acceder a la Guía Completa",
+      "guideNote": "El enlace será configurado pronto por el administrador"
+    },
+    "pve": {
+      "title": "BUILD PVE",
+      "subtitle": "Exploración y Mazmorras",
+      "contextTitle": "Contexto de Uso",
+      "context": "Optimizada para exploración de mazmorras, farmeo de recursos y enfrentamiento de jefes PvE. Equilibra daño sostenido, supervivencia y eficiencia en la recolección de recursos.",
+      "strategyTitle": "Estrategia Principal",
+      "strategy": "Enfócate en rotaciones de habilidades eficientes para maximizar DPS sostenido. Aprende los patrones de los jefes y mantén tus pociones y consumibles siempre listos.",
+      "accessGuide": "Acceder a la Guía Completa",
+      "guideNote": "El enlace será configurado pronto por el administrador"
+    }
   },
   "discordModal": {
     "title": "Bienvenido a Smoking Snakes LATAM",

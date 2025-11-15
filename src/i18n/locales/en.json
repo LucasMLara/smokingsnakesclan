@@ -1,8 +1,54 @@
 {
+  "navbar": {
+    "home": "Home",
+    "about": "About Clan",
+    "announcements": "Official Announcement",
+    "professions": "Profession Houses",
+    "missions": "Missions",
+    "rankings": "Rankings",
+    "guides": {
+      "title": "Guides",
+      "pvpZvz": "PvP ZVZ Build (Large Scale)",
+      "pvpSmall": "PvP Build (Small Scale)",
+      "pve": "PvE Build"
+    }
+  },
   "hero": {
     "title": "Smoking Snakes LATAM",
     "slogan": "Order, Strength and Venom",
     "discord": "Join Discord"
+  },
+  "guides": {
+    "pvpZvz": {
+      "title": "PVP ZVZ BUILD",
+      "subtitle": "Large Scale - Mass Combat",
+      "contextTitle": "Usage Context",
+      "context": "This build is optimized for large-scale combat (Zerg vs Zerg), where dozens or hundreds of players face each other simultaneously. The focus is on survival, area control, and sustained group damage.",
+      "strategyTitle": "Main Strategy",
+      "strategy": "Stay in formation with your group, prioritize targets called by shotcallers, and use your area control abilities at the right time. Coordination is key to winning ZVZ battles.",
+      "accessGuide": "Access Full Guide",
+      "guideNote": "Link will be configured soon by administrator"
+    },
+    "pvpSmall": {
+      "title": "SMALL SCALE PVP BUILD",
+      "subtitle": "Small Scale - Tactical Combat",
+      "contextTitle": "Usage Context",
+      "context": "Designed for combat with 5-15 players, where mobility, burst damage, and individual decisions make the difference. Ideal for ganks, resource defense, and quick skirmishes.",
+      "strategyTitle": "Main Strategy",
+      "strategy": "Maximize your damage potential in short windows, use terrain to your advantage, and always be ready to chase or retreat. Quick communication with your small group is essential.",
+      "accessGuide": "Access Full Guide",
+      "guideNote": "Link will be configured soon by administrator"
+    },
+    "pve": {
+      "title": "PVE BUILD",
+      "subtitle": "Exploration and Dungeons",
+      "contextTitle": "Usage Context",
+      "context": "Optimized for dungeon exploration, resource farming, and facing PvE bosses. Balances sustained damage, survivability, and resource gathering efficiency.",
+      "strategyTitle": "Main Strategy",
+      "strategy": "Focus on efficient ability rotations to maximize sustained DPS. Learn boss patterns and keep your potions and consumables always ready.",
+      "accessGuide": "Access Full Guide",
+      "guideNote": "Link will be configured soon by administrator"
+    }
   },
   "discordModal": {
     "title": "Welcome to Smoking Snakes LATAM",
