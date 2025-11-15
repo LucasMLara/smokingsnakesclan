@@ -50,7 +50,7 @@ export const Navbar = () => {
 
     let lastScrollY = window.scrollY;
 
-    ScrollTrigger.create({
+    const trigger = ScrollTrigger.create({
       start: 'top top',
       end: 99999,
       onUpdate: () => {
@@ -81,7 +81,7 @@ export const Navbar = () => {
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      trigger.kill();
     };
   }, []);
 

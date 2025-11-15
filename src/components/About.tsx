@@ -11,15 +11,19 @@ export const About = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
+      // Set initial visible state
+      gsap.set(sectionRef.current, { opacity: 1, x: 0 });
+      
+      // Animate from hidden
       gsap.from(sectionRef.current, {
-        x: -100,
+        x: -50,
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
+        ease: 'power2.out',
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: 1,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
         },
       });
     }, sectionRef);
