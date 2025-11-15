@@ -172,7 +172,7 @@ export const Navbar = () => {
               {isGuidesOpen && (
                 <div 
                   ref={guidesDropdownRef}
-                  className="absolute top-full left-0 mt-2 w-64 bg-card/95 backdrop-blur-xl border border-glass-border rounded-lg shadow-elegant overflow-hidden"
+                  className="absolute top-full left-0 mt-1 w-64 bg-deep-black/98 backdrop-blur-xl border border-glass-border rounded-lg shadow-elegant overflow-hidden z-50"
                 >
                   {guideItems.map((guide) => (
                     <Link

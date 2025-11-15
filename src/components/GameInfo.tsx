@@ -10,11 +10,11 @@ export const GameInfo = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    if (!sectionRef.current) return;
+
     const ctx = gsap.context(() => {
-      // Set initial visible state
       gsap.set(sectionRef.current, { opacity: 1, x: 0 });
       
-      // Animate from hidden
       gsap.from(sectionRef.current, {
         x: 50,
         opacity: 0,
