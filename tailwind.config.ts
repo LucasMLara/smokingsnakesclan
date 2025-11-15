@@ -61,6 +61,11 @@ export default {
         cinzel: ["Cinzel", "serif"],
         medieval: ["EB Garamond", "serif"],
       },
+      boxShadow: {
+        glow: "0 0 40px hsl(0 100% 27% / 0.2)",
+        card: "0 8px 32px hsl(0 0% 0% / 0.4)",
+        elegant: "0 10px 30px -10px hsl(0 100% 27% / 0.3)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
