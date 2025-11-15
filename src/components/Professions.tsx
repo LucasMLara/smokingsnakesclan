@@ -1,8 +1,9 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Hammer, Sword, Shield, Package, Home as HomeIcon, FlaskConical, UtensilsCrossed, Gem, Users } from 'lucide-react';
+import { ProfessionModal } from '@/components/modals/ProfessionModal';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ export const Professions = () => {
   const { t } = useTranslation();
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
+  const [selectedProfession, setSelectedProfession] = useState<{ key: string; icon: any; master: string | null } | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -67,7 +69,8 @@ export const Professions = () => {
               ref={(el) => {
                 if (el) cardsRef.current[index] = el;
               }}
-              className="glass-card glass-hover p-6 rounded-xl text-center"
+              className="glass-card glass-hover p-6 rounded-xl text-center cursor-pointer transition-transform hover:scale-105"
+              onClick={() => setSelectedProfession({ key: profession.key, icon: profession.icon, master: profession.master })}
             >
               <Icon className="w-10 h-10 mx-auto mb-3 text-primary" />
               <h3 className="text-lg font-cinzel font-bold mb-2">
@@ -80,6 +83,16 @@ export const Professions = () => {
           );
         })}
       </div>
+
+      {selectedProfession && (
+        <ProfessionModal
+          open={!!selectedProfession}
+          onOpenChange={() => setSelectedProfession(null)}
+          professionKey={selectedProfession.key}
+          icon={selectedProfession.icon}
+          master={selectedProfession.master}
+        />
+      )}
     </section>
   );
 };

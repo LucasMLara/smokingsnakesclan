@@ -4,6 +4,23 @@
     "slogan": "Order, Strength and Venom",
     "discord": "Join Discord"
   },
+  "discordModal": {
+    "title": "Welcome to Smoking Snakes LATAM",
+    "subtitle": "Read the rules and information before joining Discord",
+    "rulesTitle": "Guild Rules",
+    "rules": [
+      "Respect among all members is mandatory",
+      "Active communication on Discord is essential",
+      "Collaboration on guild missions",
+      "Contribute resources whenever possible",
+      "Follow strategies defined by leaders",
+      "Trolling or sabotage of members is prohibited"
+    ],
+    "profileTitle": "About the Guild",
+    "profileDescription": "Smoking Snakes LATAM is a guild focused on cooperation, strategy and territorial dominance. We work together to build the strongest empire in Pax Dei, with military organization and discipline.",
+    "agreement": "I have read and agree to the rules",
+    "enterButton": "Join Discord"
+  },
   "about": {
     "title": "About the Clan",
     "description": "Smoking Snakes LATAM is a guild formed by players from Latin America. Our focus is cooperation, progress, and territorial dominance in the Pax Dei universe."
@@ -16,47 +33,64 @@
     "title": "Official Announcement",
     "phase1": {
       "title": "Phase 1 — Castle Preparation",
-      "description": "Focus on building the core structure, resource gathering, and defining strategic areas."
+      "description": "Focus on building the central structure, gathering resources and defining strategic areas.",
+      "fullDescription": "In this initial phase, our goal is to establish the foundations of our empire. All members should focus on gathering basic resources such as wood, stone and iron. The central castle structure needs to be erected with maximum priority. Each profession should begin organizing their work areas and establish efficient collection routes. This is a crucial phase that will determine our growth speed in the coming weeks."
     },
     "phase2": {
-      "title": "Phase 2 — Profession Houses Consolidation",
-      "description": "Establishment of specialized workshops and training of master craftsmen."
+      "title": "Phase 2 — Consolidation of Profession Houses",
+      "description": "Establishment of specialized workshops and training of master craftsmen.",
+      "fullDescription": "With the castle established, we now focus on creating specialized infrastructure. Each Profession House must have its workshop fully functional with all necessary tools. Master craftsmen should train apprentices and establish efficient production lines. The goal is to achieve self-sufficiency in all crafting areas, allowing us to produce high-quality equipment for the entire guild."
     },
     "phase3": {
       "title": "Phase 3 — Territory Takeover",
-      "description": "Territorial expansion, strategic alliances, and regional dominance."
+      "description": "Territorial expansion, strategic alliances and regional dominance.",
+      "fullDescription": "The time has come to expand our influence. With our defenses consolidated and production established, we will begin conquering strategic territories. This includes outposts, trade routes and areas rich in rare resources. We will seek alliances with allied guilds and demonstrate our strength against adversaries. Every member must be prepared to defend our interests and participate in organized military campaigns."
     }
   },
   "professions": {
     "title": "Profession Houses",
     "blacksmith": "Blacksmith",
+    "blacksmithDescription": "Specialist in forging essential tools. Responsible for producing pickaxes, axes, shovels and other basic tools that keep the guild operational.",
     "weaponsmith": "Weaponsmith",
+    "weaponsmithDescription": "Master in the art of creating deadly weapons. Produces swords, war axes, spears and other weapons that equip our warriors in battles.",
     "armorsmith": "Armorsmith",
+    "armorsmithDescription": "Craftsman specialized in protection. Forges heavy armors, shields and defensive pieces that keep our combatants alive on the battlefield.",
     "leatherworker": "Leatherworker",
+    "leatherworkerDescription": "Skilled leather worker. Creates light armor, bags, belts and flexible equipment ideal for scouts and archers.",
     "builder": "Builder",
+    "builderDescription": "Essential builder for our infrastructure. Responsible for erecting structures, fortifications and furniture that compose our empire.",
     "alchemist": "Alchemist",
+    "alchemistDescription": "Master of elements and potions. Produces healing elixirs, strength potions and other alchemical preparations that provide combat advantages.",
     "farmer": "Farmer/Cook",
+    "farmerDescription": "Guardian of guild sustenance. Cultivates food, raises animals and prepares meals that keep everyone nourished and strong.",
     "jewelry": "Jeweler",
-    "recruiter": "Recruits Master",
+    "jewelryDescription": "Artist of gems and precious metals. Creates rings, necklaces and amulets with magical properties that strengthen guild members.",
+    "recruiter": "Master of Recruits",
+    "recruiterDescription": "Responsible for expansion and training. Recruits new members, organizes training and ensures everyone is prepared for their roles.",
     "awaiting": "Awaiting candidates"
   },
   "missions": {
     "title": "Guild Missions",
+    "progressTitle": "Objectives Progress",
     "mission1": {
       "title": "Iron Collection",
-      "description": "Collect 5000 units of iron for fortifications"
+      "description": "Collect 5000 iron units for fortifications",
+      "fullDescription": "This mission is critical for strengthening our defenses. We need large amounts of iron to reinforce castle walls and produce equipment for the entire guild. All miners should prioritize collecting this resource. In addition to iron, we also need additional wood for structural supports."
     },
     "mission2": {
       "title": "Outpost Defense",
-      "description": "Protect the northern outpost against invaders"
+      "description": "Protect the northern outpost against invaders",
+      "fullDescription": "Our northern outpost is under constant threat from hostile factions. This mission requires eliminating all enemy forces in the area and establishing regular patrols. Success in this mission will ensure safe trade routes and access to valuable resources in the northern region."
     },
     "mission3": {
       "title": "Dark Forest Exploration",
-      "description": "Map rare resources in the western region"
+      "description": "Map rare resources in the western region",
+      "fullDescription": "The Dark Forest is known to harbor very rare resources and magical materials. This exploration mission aims to completely map the region, identify points of interest and catalog unique resources. Experienced scouts are needed, as the area presents unknown dangers. The knowledge gained will be invaluable for future operations."
     },
     "mission4": {
       "title": "Watchtower Construction",
-      "description": "Complete strategic tower at the southern border"
+      "description": "Complete strategic tower at southern border",
+      "fullDescription": "The southern Watchtower will be our most important strategic observation point. It will allow us to monitor enemy movements, control trade routes and serve as an advanced defense post. Construction is in final stages, requiring only final materials and finishing. This structure will be crucial for our territorial security."
     },
     "type": {
       "resource": "Resource",

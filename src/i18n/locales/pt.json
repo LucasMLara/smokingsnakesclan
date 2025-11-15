@@ -4,6 +4,23 @@
     "slogan": "Ordem, Força e Veneno",
     "discord": "Entrar no Discord"
   },
+  "discordModal": {
+    "title": "Bem-vindo à Smoking Snakes LATAM",
+    "subtitle": "Leia as regras e informações antes de entrar no Discord",
+    "rulesTitle": "Regras da Guilda",
+    "rules": [
+      "Respeito entre todos os membros é obrigatório",
+      "Comunicação ativa no Discord é essencial",
+      "Colaboração nas missões da guilda",
+      "Contribuir com recursos sempre que possível",
+      "Seguir as estratégias definidas pelos líderes",
+      "Proibido trollagem ou sabotagem de membros"
+    ],
+    "profileTitle": "Sobre a Guilda",
+    "profileDescription": "A Smoking Snakes LATAM é uma guilda focada em cooperação, estratégia e domínio territorial. Trabalhamos juntos para construir o império mais forte em Pax Dei, com organização e disciplina militar.",
+    "agreement": "Li e concordo com as regras",
+    "enterButton": "Entrar no Discord"
+  },
   "about": {
     "title": "Sobre o Clã",
     "description": "A Smoking Snakes LATAM é uma guilda formada por jogadores da América Latina. Nosso foco é cooperação, progresso e domínio territorial no universo de Pax Dei."
@@ -16,47 +33,64 @@
     "title": "Comunicado Oficial",
     "phase1": {
       "title": "Fase 1 — Preparação do Castelo",
-      "description": "Foco na construção da estrutura central, coleta de recursos e definição de áreas estratégicas."
+      "description": "Foco na construção da estrutura central, coleta de recursos e definição de áreas estratégicas.",
+      "fullDescription": "Nesta fase inicial, nosso objetivo é estabelecer as fundações do nosso império. Todos os membros devem focar na coleta de recursos básicos como madeira, pedra e ferro. A estrutura central do castelo precisa ser erguida com prioridade máxima. Cada profissão deve começar a organizar suas áreas de trabalho e estabelecer rotas de coleta eficientes. Esta é uma fase crucial que determinará nossa velocidade de crescimento nas próximas semanas."
     },
     "phase2": {
       "title": "Fase 2 — Consolidação das Casas de Profissão",
-      "description": "Estabelecimento das oficinas especializadas e treinamento dos mestres artesãos."
+      "description": "Estabelecimento das oficinas especializadas e treinamento dos mestres artesãos.",
+      "fullDescription": "Com o castelo estabelecido, agora focamos em criar infraestrutura especializada. Cada Casa de Profissão deve ter sua oficina totalmente funcional com todas as ferramentas necessárias. Os mestres artesãos devem treinar aprendizes e estabelecer linhas de produção eficientes. O objetivo é atingir autossuficiência em todas as áreas de crafting, permitindo que produzamos equipamentos de alta qualidade para toda a guilda."
     },
     "phase3": {
       "title": "Fase 3 — Tomada de Território",
-      "description": "Expansão territorial, alianças estratégicas e domínio da região."
+      "description": "Expansão territorial, alianças estratégicas e domínio da região.",
+      "fullDescription": "Chegou o momento de expandir nossa influência. Com nossas defesas consolidadas e produção estabelecida, iniciaremos a conquista de territórios estratégicos. Isso inclui postos avançados, rotas comerciais e áreas ricas em recursos raros. Buscaremos alianças com guildas aliadas e demonstraremos nossa força contra adversários. Todo membro deve estar preparado para defender nossos interesses e participar das campanhas militares organizadas."
     }
   },
   "professions": {
     "title": "Casas de Profissão",
     "blacksmith": "Ferreiro",
+    "blacksmithDescription": "Especialista em forjar ferramentas e implementos essenciais. Responsável pela produção de picaretas, machados, pás e outras ferramentas básicas que mantêm a guilda operacional.",
     "weaponsmith": "Armeiro",
+    "weaponsmithDescription": "Mestre na arte de criar armas mortais. Produz espadas, machados de guerra, lanças e outras armas que equipam nossos guerreiros nas batalhas.",
     "armorsmith": "Armadureiro",
+    "armorsmithDescription": "Artesão especializado em proteção. Forja armaduras pesadas, escudos e peças defensivas que mantêm nossos combatentes vivos no campo de batalha.",
     "leatherworker": "Coureiro",
+    "leatherworkerDescription": "Trabalhador de couro habilidoso. Cria armaduras leves, bolsas, cintos e equipamentos flexíveis ideais para scouts e arqueiros.",
     "builder": "Carpinteiro",
+    "builderDescription": "Construtor essencial para nossa infraestrutura. Responsável por erguer estruturas, fortificações e mobiliário que compõem nosso império.",
     "alchemist": "Alquimista",
+    "alchemistDescription": "Mestre dos elementos e poções. Produz elixires de cura, poções de força e outros preparados alquímicos que dão vantagem em combate.",
     "farmer": "Fazendeiro/Cozinheiro",
+    "farmerDescription": "Guardião da sustentação da guilda. Cultiva alimentos, cria animais e prepara refeições que mantêm todos nutridos e fortes.",
     "jewelry": "Joalheiro",
+    "jewelryDescription": "Artista das gemas e metais preciosos. Cria anéis, colares e amuletos com propriedades mágicas que fortalecem os membros da guilda.",
     "recruiter": "Mestre dos Recrutas",
+    "recruiterDescription": "Responsável pela expansão e treinamento. Recruta novos membros, organiza treinamentos e garante que todos estejam preparados para suas funções.",
     "awaiting": "Aguarda candidatos"
   },
   "missions": {
     "title": "Missões da Guilda",
+    "progressTitle": "Progresso dos Objetivos",
     "mission1": {
       "title": "Coleta de Ferro",
-      "description": "Coletar 5000 unidades de ferro para fortificações"
+      "description": "Coletar 5000 unidades de ferro para fortificações",
+      "fullDescription": "Esta missão é crítica para o fortalecimento de nossas defesas. Precisamos de grandes quantidades de ferro para reforçar as muralhas do castelo e produzir equipamentos para toda a guilda. Todos os mineradores devem priorizar a coleta deste recurso. Além do ferro, também precisamos de madeira adicional para suportes estruturais."
     },
     "mission2": {
       "title": "Defesa do Posto Avançado",
-      "description": "Proteger o posto norte contra invasores"
+      "description": "Proteger o posto norte contra invasores",
+      "fullDescription": "Nosso posto avançado no norte está sob constante ameaça de facções hostis. Esta missão requer a eliminação de todas as forças inimigas na área e o estabelecimento de patrulhas regulares. O sucesso desta missão garantirá rotas de comércio seguras e acesso a recursos valiosos na região norte."
     },
     "mission3": {
       "title": "Exploração da Floresta Sombria",
-      "description": "Mapear recursos raros na região oeste"
+      "description": "Mapear recursos raros na região oeste",
+      "fullDescription": "A Floresta Sombria é conhecida por abrigar recursos raríssimos e materiais mágicos. Esta missão de exploração visa mapear completamente a região, identificar pontos de interesse e catalogar recursos únicos. Scouts experientes são necessários, pois a área apresenta perigos desconhecidos. O conhecimento adquirido será inestimável para operações futuras."
     },
     "mission4": {
       "title": "Construção da Torre de Vigia",
-      "description": "Finalizar torre estratégica no limite sul"
+      "description": "Finalizar torre estratégica no limite sul",
+      "fullDescription": "A Torre de Vigia sul será nosso ponto de observação estratégico mais importante. Ela nos permitirá monitorar movimentos inimigos, controlar rotas comerciais e servir como posto de defesa avançado. A construção está nas fases finais, necessitando apenas dos materiais finais e acabamento. Esta estrutura será crucial para nossa segurança territorial."
     },
     "type": {
       "resource": "Recurso",
