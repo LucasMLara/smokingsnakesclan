@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { Button } from '@/components/ui/button';
 import { DiscordModal } from '@/components/modals/DiscordModal';
+import { AnimatedLogo } from '@/components/AnimatedLogo';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -68,14 +69,9 @@ export const Hero = () => {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto w-full">
-        {/* Logo placeholder */}
-        <div
-          ref={logoRef}
-          className="mb-8 flex justify-center"
-        >
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blood-red to-blood-red-dark border-4 border-blood-red shadow-glow flex items-center justify-center">
-            <span className="text-6xl md:text-7xl">🐍</span>
-          </div>
+        {/* Animated Logo */}
+        <div ref={logoRef} className="mb-8 flex justify-center">
+          <AnimatedLogo />
         </div>
 
         <h1
